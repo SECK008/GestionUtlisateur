@@ -1,0 +1,27 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello AdminController!{% endblock %}
+
+{% block body %}
+
+<div class="container-fluid">
+        <div class="row py-4">
+            <div class="col-lg-6 mx-auto shadow py-4">
+                    <hr>
+                <div class="container-fluid">
+
+                    <!-- Accueil -->
+
+                            <div class="example-wrapper">
+                                <h1>Hello {{ app.user.email }}</h1>
+                                <a href="{{path ('app_logout')}}">Logout</a>
+                            </div>
+
+                    <!-- Accueil -->
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
